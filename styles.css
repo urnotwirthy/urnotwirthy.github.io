@@ -1,0 +1,126 @@
+
+/* colors:
+
+logo-background: #bde4d7
+logo-outlines: #1e4553
+logo-blue: #04a2cc
+
+
+*/
+
+
+@font-face {
+    font-family: "Brush Script MT Regular";
+    src: url(/fonts/Brush\ Script\ MT\ Regular.ttf)
+}
+
+header {
+    width: 100%;
+    margin: 0;
+    position: fixed;
+    padding: 0px 0px 0px 0px;
+    height: 105px;
+    top: 0px;
+    right: 0px;
+    z-index: 50;
+    overflow: auto;
+    background-color: #1e4553;
+}
+
+main{
+    width: 90%;
+    max-width: 960px;
+    min-width: 330px;
+    margin: auto;
+}
+
+body {
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #E1D3B9;
+}
+
+.content {
+    margin: auto;
+}
+
+.header-logo {
+    height: 85px;
+    float: left;
+    border-radius: 50%;
+    padding: 10px 10px 10px 10px;
+    justify-content: center;
+}
+
+.company-name {
+    padding: 10px 10px 10px 10px;
+    margin-top: 10px;
+    text-indent: 15px;
+    color: #FDF5E6;
+    opacity: 75;
+    font-family: "Brush Script MT Regular", helvetica;
+    font-size: 50px;
+    text-wrap: nowrap;
+}
+
+.header-logo .company-name {
+    float: left;
+}
+
+.main {
+    padding-top: 80px;
+    margin: auto;
+    width: 100%;
+}
+
+.coming-soon {
+    text-align: center;
+    padding-top: 40px;
+    font-family: Tahoma, Arial, sans-serif;
+    margin: auto;
+    width: 100%;
+}
+
+.services {
+    display: box;
+    flex-direction: row;
+    padding: 10px;
+    max-width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 25px;
+}
+
+.web-dev {
+    color: #FDF5E6;
+    text-align: center;
+    background-color:#1e4553;
+    padding: 10px;
+    width: 225px;
+    height: 75px;
+    border-radius: 15px;
+    float: left;
+    margin: auto;
+}
+
+.research {
+    color: #FDF5E6;
+    text-align: center;
+    background-color:#1e4553;
+    padding: 10px;
+    width: 225px;
+    height: 75px;
+    float: right;
+    border-radius: 15px;
+    margin: auto;
+}
+
+@media (max-width: 767px) {
+    .services {
+      flex-direction: column-reverse;
+    }
+    .web-dev,
+    .research {
+      width: auto;
+    }
+}
